@@ -2,8 +2,6 @@ let mobilenet;
 let video;
 let label = '';
 
-app.use(cors());
-
 function modelReady() {
     console.log('Model is ready!!!');
     mobilenet.predict(gotResults);

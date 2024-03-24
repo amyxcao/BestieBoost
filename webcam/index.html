@@ -7,8 +7,7 @@
     <style>
         body {
             font-family: "Arial", cursive;
-            background-color: #fffbf7; /* Light cream */
-            margin: 0;
+            background-image: url('back.png');            margin: 0;
             padding: 20px;
             display: flex;
             flex-direction: column;
@@ -18,7 +17,7 @@
         }
         #container {
             text-align: center;
-            background-color: #fffbf7; /* White */
+            background-image: "./back.png"; /* White */
             padding: 20px;
             border-radius: 20px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
@@ -111,7 +110,7 @@
             createCanvas(640, 480);
             video = createCapture(VIDEO);
             video.hide();
-            background(255); /* White background */
+            // background(255); /* White background */
             mobilenet = ml5.imageClassifier('MobileNet', video, modelReady);
         }
 

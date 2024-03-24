@@ -18,8 +18,12 @@ function gotResults(error, results) {
     }
 }
 
+// function imageReady() {
+//     imageReady(puffin, 0, 0, width, height);
+// }
+
 function setup() {
-    createCanvas(680, 480);
+    createCanvas(640, 480);
     video = createCapture(VIDEO);
     //puffin = createImg('puffin.jpg');
     video.hide();
